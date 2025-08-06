@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Channel Focus</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>YouTube Channel Focus</h1>
+    
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="toggleExtension" checked>
+        <span class="slider"></span>
+      </label>
+      <span id="toggleStatus">Enabled</span>
+    </div>
+    
+    <div class="input-group">
+      <input type="text" id="channelInput" placeholder="Paste channel URL">
+      <button id="addBtn">Add Channel</button>
+    </div>
+    
+    <div class="stats">
+      <span id="statsCount">0</span> videos currently hidden
+    </div>
+    
+    <div class="channel-list" id="channelList"></div>
+    
+    <div class="actions">
+      <button id="exportBtn">Export List</button>
+      <button id="importBtn">Import List</button>
+      <input type="file" id="fileInput" accept=".json" style="display:none;">
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
